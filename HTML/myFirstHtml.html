@@ -2,6 +2,26 @@
 <html>
   <head>
     <title>Monika Abhijeet</title>
+    <style>
+        table, th,td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 20px;
+            /* padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left:50px;
+            padding-right:50px; */
+
+        }
+        p {
+            color: blue;
+        }
+
+        h1 {
+            color: red;
+        }
+    </style>
   </head>
   <body>
     <h1>Demo of headings</h1>
@@ -13,8 +33,8 @@
     <h6>Heading 6</h6>
     <hr />
     <h1>Demo of paragraph</h1>
-    <div>
-      <h3>Description about me</h3>
+    <div >
+      <h3 style="color: red; background-color: yellow"> Description about me</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quo
         repellat ipsum iste unde eos nisi, qui necessitatibus non facere saepe
@@ -78,12 +98,70 @@
     </div>
     <h1>Demo of Anchor tag a</h1>
     <a href="https://www.w3schools.com/js/" target="_blank">Click me </a>
+    <a href="mailto: monikaabhijeet@gmail.com">Send email</a>
     <hr />
     <h1>Demo of image</h1>
-    <img src="./images/dog.jpeg" width="200px" />
+    <img src="./images/dog.jpeg" width="200px" alt="this was a dog image" />
     <img
       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsmGvsAHPdEdmdagL6_cPJgr6F6gI5if_YB5LOQRNz&s"
       width="300px"
     />
+    <hr />
+    <h1>Demo of table</h1>
+    <table>
+        <caption>Employee Details</caption>
+      <tr>
+        <th>Sl No</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Age</th>
+        <th>Email id</th>
+        <th>Phone number</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Monika</td>
+        <td>Abhijeet</td>
+        <td>28</td>
+        <td>monikaabhijeet@gmail.com</td>
+        <td>778786628</td>
+      </tr>
+      <td>2</td>
+      <td>Shruti</td>
+      <td>Hassan</td>
+      <td>30</td>
+      <td>shruthi@gmail.com</td>
+      <td>74875555</td>
+    </tr>
+    </table>
+
+
+    <hr/>
+
+    <table>
+        <caption>Employee Details</caption>
+      <tr>
+        <th>Sl No</th>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+        <th>Email id</th>
+        <th>Phone number</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Monika</td>
+        <td>Abhijeet</td>
+        <td>28</td>
+        <td>monikaabhijeet@gmail.com</td>
+        <td>778786628</td>
+      </tr>
+      <td>2</td>
+      <td>Shruti</td>
+      <td>Hassan</td>
+      <td>30</td>
+      <td>shruthi@gmail.com</td>
+      <td>74875555</td>
+    </tr>
+    </table>
   </body>
 </html>
