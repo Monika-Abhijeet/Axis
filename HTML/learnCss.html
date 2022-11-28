@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Css Demo</title>
+    <style>
+      /* internal stylesheet */
+      #internal-style {
+        background-color: brown;
+        color: white;
+      }
+
+      #description {
+          color: purple;
+      }
+
+
+    </style>
+    <link rel="stylesheet" href="./learnCss.css" />
+  </head>
+  <body>
+      <h1>This is heading</h1>
+    <div style="background-color: aquamarine; color: blue">
+      This is an example iof inline Styling
+    </div>
+    <div id="internal-style">This is an example of internal stylesheet</div>
+    <div id="external-style">This is an example of external stylesheet</div>
+    <div>
+      <h1 class="highlighter">This is an example of class selector</h1>
+      <p>This is a description and not using class</p>
+      <p class="highlighter">
+        This is using class selector again for a paragraph
+      </p>
+
+      <h1>Demo of priority if inline,internal,external stylesheet</h1>
+
+      <div id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cupiditate est ad quibusdam a eius dolorem sed obcaecati officiis ipsa! Dicta iure exercitationem optio nobis temporibus consequatur labore fugit ullam perspiciatis suscipit eius nihil repudiandae vel porro, tenetur minima totam laudantium aut. Sequi neque perferendis at animi accusamus voluptatum veniam?</div>
+    </div>
+    <table>
+        <caption>Employee Details</caption>
+      <tr>
+        <th>Sl No</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Age</th>
+        <th>Email id</th>
+        <th>Phone number</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Monika</td>
+        <td>Abhijeet</td>
+        <td>28</td>
+        <td>monikaabhijeet@gmail.com</td>
+        <td>778786628</td>
+      </tr>
+      <td>2</td>
+      <td>Shruti</td>
+      <td>Hassan</td>
+      <td>30</td>
+      <td>shruthi@gmail.com</td>
+      <td>74875555</td>
+    </tr>
+    </table>
+  </body>
+</html>

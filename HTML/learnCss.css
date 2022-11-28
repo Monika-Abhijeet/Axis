@@ -1,0 +1,35 @@
+/* external stylesheet */
+/* id selector */
+#external-style {
+  background-color: bisque;
+  color: red;
+}
+
+/* class selector */
+.highlighter {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+}
+
+/* element selector */
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  color: blue;
+}
+
+h1 {
+  color: blueviolet;
+}
+
+* {
+  color: red;
+}
+
+/* #description {
+  color: yellow;
+} */
