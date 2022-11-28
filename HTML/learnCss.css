@@ -22,6 +22,13 @@ td {
   color: blue;
 }
 
+tr:hover {
+  background-color: aquamarine;
+}
+
+tr:nth-child(odd) {
+  background-color: red;
+}
 h1 {
   color: blueviolet;
 }
@@ -30,6 +37,57 @@ h1 {
   color: red;
 }
 
-/* #description {
-  color: yellow;
-} */
+#description {
+  color: aqua;
+}
+
+.demo-btn {
+  background-color: aquamarine;
+  /* width: 200px;
+  height: 40px; */
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.demo-btn :hover {
+  background-color: red;
+  color: white;
+}
+
+.relative-demo {
+  position: relative;
+  /* top: 30px; */
+  left: 100px;
+}
+
+.fixed-demo {
+  background-color: blueviolet;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  height: 30px;
+  top: 0;
+}
+
+.absolute-demo {
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: 0;
+}
+
+.parent {
+  width: 60vw;
+  height: 600px;
+  border: 10px solid black;
+  position: relative;
+}
+
+.sticky-demo {
+  background-color: aquamarine;
+  position: sticky;
+  font-size: 40px;
+  top: 200px;
+}
