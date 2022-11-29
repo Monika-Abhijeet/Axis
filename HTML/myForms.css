@@ -1,0 +1,22 @@
+.label-custom {
+  width: 20%;
+}
+input {
+  width: 60%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 3px solid black;
+}
+
+input[type="text"]:focus {
+  background-color: blueviolet;
+  color: white;
+}
+
+input[type="text"] {
+  background-color: aqua;
+}
+
+input[type="password"] {
+  /* background-color: red; */
+}
