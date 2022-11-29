@@ -20,3 +20,25 @@ input[type="text"] {
 input[type="password"] {
   /* background-color: red; */
 }
+
+.outer-container {
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-container {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  border: 2px solid black;
+  display: flex;
+  /* text-align: center; */
+  /* justify-items: center; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
