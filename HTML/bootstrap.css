@@ -3,3 +3,19 @@
   height: 100px;
   border: 2px solid black;
 }
+.custom-card {
+  width: 200px;
+  border: 1px solid black;
+}
+
+.custom-card img {
+  width: 150px;
+}
+
+.bootstrap-card {
+  width: 200px;
+}
+
+.bootstrap-card img {
+  width: 100%;
+}
