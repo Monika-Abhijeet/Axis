@@ -116,3 +116,20 @@ function validateForm(e) {
     alert(`you typed ${name}`);
   }
 }
+
+// local storage
+// storing a value in local storage
+
+localStorage.setItem("name", "Monika");
+console.log(localStorage.getItem("name"));
+
+// localStorage.removeItem("n ame");
+
+// storing value in session storage
+
+function setStorage() {
+  sessionStorage.setItem("email", "monika@gmail.com");
+  sessionStorage.setItem("phone", "787979797");
+}
+console.log(new Date(2023, 0, 1).toUTCString());
+document.cookie = "name=monika;expires=" + new Date(2023, 0, 1).toUTCString();
