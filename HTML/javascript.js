@@ -67,10 +67,23 @@ for (let i = 0; i < employees.length; i++) {
 }
 // num1, num2 are parameters
 // addNumbers is a function name
-function addNumbers(num1, num2) {
-  return num1 + num2;
+var num1 = 20,
+  num2 = 10;
+function addNumbers() {
+  let sum = num1 + num2;
+  document.getElementById("operations").innerHTML = sum;
 }
 
-// 5,10 are arguments
-let sum = addNumbers(5, 10);
-console.log(sum);
+function subtractNumbers() {
+  let diff = num1 - num2;
+  document.getElementById("operations").innerHTML = diff;
+}
+
+function multiplyNumbers() {
+  let mul = num1 * num2;
+  document.getElementById("operations").innerHTML = mul;
+}
+function divideNumbers() {
+  let div = num1 / num2;
+  document.getElementById("operations").innerHTML = div;
+}
