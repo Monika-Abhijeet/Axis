@@ -225,4 +225,22 @@ const greaterSalary = employees.filter((emp) => {
 
 console.log(greaterSalary);
 
+// includes
 console.log(numberList.includes(17));
+
+// String methods
+let name = "monika abhijeet";
+console.log(name.length);
+
+// string replace
+let text = "i like frontEND and backEND coding";
+let newText = text.replace(/END/g, "end");
+console.log(text, newText);
+
+// to uppercase
+console.log(text.toUpperCase());
+console.log(text.toLowerCase());
+
+const fname = "monika";
+const lname = "abhijeet";
+console.log(fname.concat(" ", lname));
