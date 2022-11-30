@@ -40,21 +40,25 @@ let employees = [
     firstName: "monika",
     lastName: "Abhijeet",
     designation: "Manager",
+    salary: 60000,
   },
   {
     firstName: "Sharad",
     lastName: "Gudi",
     designation: "Employee",
+    salary: 20000,
   },
   {
     firstName: "Gaanavi",
     lastName: "Abhijeet",
     designation: "CEO",
+    salary: 90000,
   },
   {
     firstName: "Abhijeet",
     lastName: "Pat",
     designation: "CTO",
+    salary: 80000,
   },
 ];
 
@@ -178,3 +182,47 @@ let allItems = fruits.concat(vegetables, dryfruits);
 
 // 6.sort
 console.log(allItems.sort());
+
+// 7. reverse
+console.log(allItems.reverse());
+
+// 8.sorting a number
+const marks = [49, 98, 100, 1, 25, 87];
+console.log(
+  marks.sort(function (a, b) {
+    return a - b;
+  })
+);
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const squareNumbers1 = [];
+for (let i = 0; i < numbers.length; i++) {
+  squareNumbers1.push(numbers[i] * numbers[i]);
+}
+console.log(squareNumbers1);
+
+// array map
+const squareNumbers = numbers.map((value) => {
+  return value * value;
+});
+console.log(squareNumbers);
+
+// filter
+const numberList = [65, 87, 12, 40, 4, 99];
+let passMarks = numberList.filter((num) => {
+  return num >= 35;
+});
+
+let failMarks = numberList.filter((num) => {
+  return num < 35;
+});
+console.log(passMarks);
+console.log(failMarks);
+
+const greaterSalary = employees.filter((emp) => {
+  return emp.salary > 70000;
+});
+
+console.log(greaterSalary);
+
+console.log(numberList.includes(17));
