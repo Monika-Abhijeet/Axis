@@ -105,3 +105,14 @@ console.log(person.firstName, person.fullName());
 function printMouseOver() {
   console.log("ypu moved mouse on button");
 }
+
+function validateForm(e) {
+  e.preventDefault();
+  console.log("form validation called");
+  let name = document.forms["myForm"]["firstName"].value;
+  if (name === "") {
+    alert("please fill the firstname");
+  } else {
+    alert(`you typed ${name}`);
+  }
+}

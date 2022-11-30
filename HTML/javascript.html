@@ -29,6 +29,9 @@
 <button onClick="divideNumbers()">Divide</button>
 <input type="text" onkeypress="printInputText(event)" id="inputText"/>
 <button onmouseleave="printMouseOver()">Hover me</button>
-
+<form name="myForm" onsubmit="validateForm(event)" >
+    Name: <input type="text" name="firstName" required/>
+    <button type="submit" >Submit</button>
+</form>
 </body>
 </html>
