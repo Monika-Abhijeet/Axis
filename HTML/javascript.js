@@ -87,3 +87,21 @@ function divideNumbers() {
   let div = num1 / num2;
   document.getElementById("operations").innerHTML = div;
 }
+
+function printInputText(event) {
+  console.log(event.target.value);
+}
+
+const person = {
+  firstName: "Monika",
+  lastName: "Abhijeet",
+  id: 1,
+  fullName: function () {
+    return `${this.firstName} ${this.lastName}`;
+  },
+};
+console.log(person.firstName, person.fullName());
+
+function printMouseOver() {
+  console.log("ypu moved mouse on button");
+}
