@@ -7,7 +7,7 @@ function FunctionCounter(props) {
   // }
 
   const [count, setCount] = useState(0);
-  const [name, setName] = useState("");
+  const [name, setName] = useState({ firstName: "", lastName: "" });
 
   function incrementCount() {
     setCount(count + 1);
@@ -19,6 +19,13 @@ function FunctionCounter(props) {
   function changeName(event) {
     setName(event.target.value);
   }
+
+  function changeFirstName(event) {
+    setName({ ...name, firstName: event.target.value });
+  }
+  function changeLastName(event) {
+    setName({ ...name, lastName: event.target.value });
+  }
   return (
     <div className="function-counter-wrapper">
       <h1> {props.name}</h1>
@@ -28,15 +35,24 @@ function FunctionCounter(props) {
       <button onClick={() => incrementCount()}>Increment</button>
       {/* <button onClick={() => decrementCount()}>Decrement</button> */}
       <button onClick={decrementCount}>Decrement</button>
-
+      FirstName
       <input
         type="text"
-        value={name}
+        value={name.firstName}
         onChange={(event) => {
-          changeName(event);
+          changeFirstName(event);
         }}
       />
-      <p>Name is {name}</p>
+      lastName
+      <input
+        type="text"
+        value={name.lastName}
+        onChange={(event) => {
+          changeLastName(event);
+        }}
+      />
+      <p>First name is {name.firstName}</p>
+      <p>last name is {name.lastName}</p>
     </div>
   );
 }
