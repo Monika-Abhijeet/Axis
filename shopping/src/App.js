@@ -1,5 +1,6 @@
 import FunctionCounter from "./components/FunctionCounter/FunctionCounter";
 import ClassCounter from "./components/ClassCounter/ClassCounter";
+import ArrowFuncDemo from "./components/ClassCounter/ArrowFuncDemo/ArrowFuncDemo";
 function App() {
   return (
     <div className="App">
@@ -9,6 +10,7 @@ function App() {
         subtitle="hello world"
       ></FunctionCounter>
       <ClassCounter title="class counter"></ClassCounter>
+      <ArrowFuncDemo></ArrowFuncDemo>
     </div>
   );
 }
