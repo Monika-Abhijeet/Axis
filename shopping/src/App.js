@@ -4,8 +4,11 @@ function App() {
   return (
     <div className="App">
       <h1>Hi everyone</h1>
-      <FunctionCounter></FunctionCounter>
-      <ClassCounter></ClassCounter>
+      <FunctionCounter
+        name="Function Counter Demo"
+        subtitle="hello world"
+      ></FunctionCounter>
+      <ClassCounter title="class counter"></ClassCounter>
     </div>
   );
 }
