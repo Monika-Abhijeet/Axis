@@ -9,7 +9,7 @@ import About from "./components/RoutingDemo/About";
 import Career from "./components/RoutingDemo/Career";
 import Contact from "./components/RoutingDemo/Contact";
 import Home from "./components/RoutingDemo/Home";
-
+import CreateUser from "./components/UsersList/CreateUser/CreateUser";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -37,6 +37,7 @@ function App() {
           <Route path="/arrow" element={<ArrowFuncDemo />}></Route>
           <Route path="/user" element={<UserList />}></Route>
           <Route path="/user/:id" element={<UserDetails />}></Route>
+          <Route path="/createUser" element={<CreateUser />}></Route>
 
           <Route
             path="/funcCounter"
