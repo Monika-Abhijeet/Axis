@@ -3,6 +3,7 @@ import ClassCounter from "./components/ClassCounter/ClassCounter";
 import ArrowFuncDemo from "./components/ClassCounter/ArrowFuncDemo/ArrowFuncDemo";
 import UseEffectDemo from "./components/UseEffectDemo/UseEffectDemo";
 import UserList from "./components/UsersList/UsersList";
+import UserDetails from "./components/UsersList/UserDetails/UserDetails";
 import Listing from "./components/RoutingDemo/Listing";
 import About from "./components/RoutingDemo/About";
 import Career from "./components/RoutingDemo/Career";
@@ -35,6 +36,8 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/arrow" element={<ArrowFuncDemo />}></Route>
           <Route path="/user" element={<UserList />}></Route>
+          <Route path="/user/:id" element={<UserDetails />}></Route>
+
           <Route
             path="/funcCounter"
             element={

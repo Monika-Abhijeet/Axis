@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 function UserList() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
@@ -56,13 +57,16 @@ function UserList() {
       {users.map((user) => {
         return (
           <p key={user.id}>
-            {user.id} - {user.name} - {user.email}{" "}
+            <Link to={`/user/${user.id}`}>
+              <span>
+                {user.id} - {user.name} - {user.email}
+              </span>
+            </Link>
             <button onClick={() => updateUser(user.id)}>Update</button>
             <button onClick={() => deleteUser(user.id)}>Delete</button>
           </p>
         );
       })}
-    
     </div>
   );
 }
